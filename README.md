@@ -2,7 +2,14 @@
 =============
 
 ## 效果图
+
+**垂直模式**
+
 ![效果图](./article/image-carousel.gif)
+
+**水平模式**
+
+![效果图](./article/image-carousel2.gif)
 
 ## 参数Attributes
 

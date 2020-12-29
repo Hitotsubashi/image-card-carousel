@@ -135,13 +135,13 @@ export default {
       const imageEl=this.$refs['vlist'].children[0]
       const imageElStyle=window.getComputedStyle(imageEl)
       if(this.mode==='horizontal'){
-        this.displacement=parseInt(imageElStyle.marginLeft)+parseInt(imageElStyle.marginRight) + parseInt(imageElStyle.width)
+        this.displacement=parseInt(imageElStyle.marginLeft)+parseInt(imageElStyle.marginRight) + parseInt(imageEl.offsetWidth)
         imageListEl.style.width=this.displacement*this.$refs['vlist'].childElementCount+'px'
-        imageListEl.style.height=parseInt(imageElStyle.height)+'px'
+        imageListEl.style.height=parseInt(imageEl.offsetHeight)+parseInt(imageElStyle.marginTop)+parseInt(imageElStyle.marginBottom)+'px'
       }else{
-        this.displacement=parseInt(imageElStyle.marginTop)+parseInt(imageElStyle.marginBottom) + parseInt(imageElStyle.height)
+        this.displacement=parseInt(imageElStyle.marginTop)+parseInt(imageElStyle.marginBottom) + parseInt(imageEl.offsetHeight)
         imageListEl.style.height=this.displacement*this.$refs['vlist'].childElementCount+'px'
-        imageListEl.style.width=parseInt(imageElStyle.width)+'px'
+        imageListEl.style.width=parseInt(imageEl.offsetWidth)+parseInt(imageElStyle.marginLeft)+parseInt(imageElStyle.marginRight)+'px'
       }
     },
     createImageEl(url){
