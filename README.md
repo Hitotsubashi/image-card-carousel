@@ -22,7 +22,7 @@
 |auto-slide|是否自动轮播|`Boolean`|-|false|否|
 |auto-slide-interval|开启自动轮播时，切换图片的时间间隔|`Number`|-|3000|否|
 |mode|选择展示的模式，有水平模式和垂直模式|`String`|horizontal/vertical|horizontal|否|
-|slide-time|切换图片过程中动画的事件|`Number`|-|300|否|
+|slide-time|切换图片过程中动画的时间|`Number`|-|300|否|
 
 ## 事件Events
 
